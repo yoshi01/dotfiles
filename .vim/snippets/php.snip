@@ -1,0 +1,37 @@
+snippet debug
+options head
+	debug(${1});
+
+snippet debuge
+options head
+	debug(${1});
+	exit;${0}
+
+snippet pdebug
+	<? debug(${1}) ?>${0}
+
+snippet pdebugt
+	<? debug("${1:#:string}") ?>${0}
+
+snippet pforeachl
+	<? foreach ($${1:#:variable} as $${2:#:key}${3: =>}) { ?>
+	${0:TARGET}
+	<? } ?>
+
+snippet pifelsel
+	<? if (${1:#:condition}) { ?>
+	${2:TARGET}
+	<? } else { ?>
+	${0}
+	<? } ?>
+
+snippet pifl
+	<? if (${1:#:condition}) { ?>
+	${0:TARGET}
+	<? } ?>
+
+snippet pelement
+	<?= $this->element('${1:#:string}') ?>
+
+snippet cset
+	$this->set('${1:#:string}', ${2});${0}
