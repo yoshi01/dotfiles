@@ -204,15 +204,15 @@ let g:vim_markdown_folding_disabled=1
 "プラグイン {{{1
 
 "NeoBundle {{{2
+"SEE: https://github.com/Shougo/neobundle.vim
+"install neobundle.vim -> Launch vim, run :NeoBundleInstall
+
 if &compatible
   set nocompatible
 endif
 
-" Required:
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-" Required:
 call neobundle#begin(expand('~/.vim/bundle'))
-" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
@@ -244,9 +244,7 @@ NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'vim-syntastic/syntastic'
 NeoBundle 'itchyny/lightline.vim'
 
-" Required:
 call neobundle#end()
-" Required:
 filetype plugin indent on
 
 NeoBundleCheck
