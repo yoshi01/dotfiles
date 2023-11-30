@@ -105,7 +105,7 @@ setopt extended_glob
 # }}}
 
 # zplug {{{2
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # plugins
