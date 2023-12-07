@@ -411,6 +411,10 @@ alias dks='docker stop'
 alias dkc='docker-compose'
 alias dku='docker-compose up -d'
 alias dkd='docker-compose down'
+
+function dke(){
+    docker exec -it $@ bash
+}
 # }}}
 
 # }}}
