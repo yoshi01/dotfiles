@@ -404,6 +404,14 @@ alias bi='bundle install'
 
 # }}}
 
+# docker {{{2
+alias dk='docker'
+alias dkp='docker ps'
+alias dks='docker stop'
+alias dkc='docker-compose'
+alias dku='docker-compose up -d'
+alias dkd='docker-compose down'
+# }}}
 
 # }}}
 
